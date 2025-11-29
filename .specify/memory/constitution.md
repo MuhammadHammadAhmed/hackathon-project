@@ -1,55 +1,58 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: N/A (initial version 1.0.0)
+- Modified principles: All principles were defined for the first time.
+- Added sections: "Technical Stack & Tools", "Rapid Iteration & Collaboration"
+- Removed sections: None
+- Templates requiring updates:
+    - .specify/templates/plan-template.md: ⚠ pending
+    - .specify/templates/spec-template.md: ⚠ pending
+    - .specify/templates/tasks-template.md: ⚠ pending
+    - .specify/commands/*.toml: ⚠ pending
+    - README.md: ⚠ pending
+- Follow-up TODOs: None
+-->
+# Hackathon Unified Book Project Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. AI-Driven Development (Claude Code & Spec-Kit Plus)
+All content creation, code generation, and development tasks will leverage AI tools, specifically Claude Code for code and text generation, and Spec-Kit Plus for spec-driven development.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Spec-Driven Development
+Features and content must be defined by clear, testable specifications before implementation begins. This ensures alignment with project goals and facilitates AI-driven generation.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Testability & Verification
+Every deliverable, including book content and chatbot functionality, must be testable and verifiable against its specifications. Automated tests will be prioritized.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Modularity & Reusability
+Components (e.g., book sections, RAG modules) should be designed to be modular, self-contained, and reusable where possible to accelerate development and maintainability.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Integrated RAG Chatbot
+The RAG chatbot will be seamlessly integrated into the Docusaurus book, providing context-aware answers to user queries based *only* on the book's content, including user-selected text.
 
-### [PRINCIPLE_6_NAME]
+### VI. Open Source & Community Focus
+All project artifacts (code, documentation, book content) will be open-sourced. Tools and processes will prioritize open standards and community-supported solutions where feasible.
 
+## Technical Stack & Tools
 
-[PRINCIPLE__DESCRIPTION]
+**Book Platform:** Docusaurus, deployed to GitHub Pages.
+**AI Code Generation:** Claude Code.
+**Spec-Driven Framework:** Spec-Kit Plus.
+**RAG Chatbot Frameworks:** OpenAI Agents/ChatKit SDKs (for agent orchestration), FastAPI (for API backend).
+**Database:** Neon Serverless Postgres.
+**Vector Database:** Qdrant Cloud Free Tier.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Rapid Iteration & Collaboration
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+**Version Control:** All changes will be managed via Git, with clear commit messages and feature branches.
+**Collaboration:** Utilize a shared development environment or clear hand-off points to facilitate parallel work on book content and chatbot development.
+**Prioritization:** Focus on core deliverables first, followed by enhancements. Timeboxing will be crucial for hackathon success.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution defines the fundamental principles and technical choices for the hackathon project.
+Amendments require team consensus and must be documented with rationale.
+Compliance with these principles will be reviewed regularly during the hackathon.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-11-29 | **Last Amended**: 2025-11-29
