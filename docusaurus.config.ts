@@ -2,8 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
+const config: Config = {
   title: 'Physical AI & Humanoid Robotic',
   tagline: 'An exploration into the future of intelligence and robotics.',
   favicon: 'img/favicon.ico',
@@ -14,15 +13,15 @@ import type * as Preset from '@docusaurus/preset-classic';
   },
 
   // Set the production url of your site here
-  url: 'https://<YOUR-GITHUB-USERNAME>.github.io',
+  url: 'https://Gemini-user.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/<YOUR-PROJECT-NAME>/',
+  baseUrl: '/hackathon-project/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '<YOUR-GITHUB-USERNAME>', // Usually your GitHub org/user name.
-  projectName: '<YOUR-PROJECT-NAME>', // Usually your repo name.
+  organizationName: 'Gemini-user', // Usually your GitHub org/user name.
+  projectName: 'hackathon-project', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -43,7 +42,7 @@ import type * as Preset from '@docusaurus/preset-classic';
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/<YOUR-GITHUB-USERNAME>/<YOUR-PROJECT-NAME>/tree/main/',
+            'https://github.com/Gemini-user/hackathon-project/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -54,7 +53,7 @@ import type * as Preset from '@docusaurus/preset-classic';
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/<YOUR-GITHUB-USERNAME>/<YOUR-PROJECT-NAME>/tree/main/',
+            'https://github.com/Gemini-user/hackathon-project/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -88,7 +87,7 @@ import type * as Preset from '@docusaurus/preset-classic';
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/<YOUR-GITHUB-USERNAME>/<YOUR-PROJECT-NAME>',
+          href: 'https://github.com/Gemini-user/hackathon-project',
           label: 'GitHub',
           position: 'right',
         },
@@ -132,7 +131,7 @@ import type * as Preset from '@docusaurus/preset-classic';
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/<YOUR-GITHUB-USERNAME>/<YOUR-PROJECT-NAME>',
+              href: 'https://github.com/Gemini-user/hackathon-project',
             },
           ],
         },
