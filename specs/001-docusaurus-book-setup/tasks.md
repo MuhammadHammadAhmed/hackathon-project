@@ -9,16 +9,16 @@ This document outlines the implementation tasks for the "Docusaurus Book Setup" 
 
 This phase focuses on initializing the Docusaurus project.
 
-- [ ] T001 Initialize a new Docusaurus classic project in a temporary directory.
-- [ ] T002 Move the contents of the initialized project to the repository root.
-- [ ] T003 Install project dependencies by running `npm install`.
+- [x] T001 Initialize a new Docusaurus classic project in a temporary directory.
+- [x] T002 Move the contents of the initialized project to the repository root.
+- [x] T003 Install project dependencies by running `npm install`.
 
 ## Phase 2: Foundational Setup
 
 This phase establishes the testing foundation for the project.
 
-- [ ] T004 Install and configure Jest for component testing.
-- [ ] T005 Install and configure Playwright for end-to-end testing.
+- [x] T004 Install and configure Jest for component testing.
+- [x] T005 Install and configure Playwright for end-to-end testing.
 
 ## Phase 3: User Story 1 - Initialize Docusaurus Project
 
